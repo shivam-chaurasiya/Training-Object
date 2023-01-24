@@ -28,7 +28,7 @@ console.log(intro.fullname.apply(int, ["Firozabad " , "India"]));
 var car = {
     name : "Suzuki",
     model : 2016 ,
-    Milege : 25
+    Milege : 15
 }
 
 let text = ""
