@@ -108,3 +108,27 @@ async function myfunction(){
     console.log(await mypro2);
 }
 myfunction();
+
+// Closure in JS
+
+let counter = 0 ;
+
+function call() {
+    counter += 1;
+}
+call();
+call();
+call();
+
+console.log(counter);
+
+function mul(){
+    let value = 1;
+    function multiply(){
+        value *= 15;
+    }
+    multiply();
+    return value;
+}
+
+console.log(mul());
