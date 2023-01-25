@@ -93,3 +93,59 @@ console.log(aa);
 console.log(
     arr1);
 console.log(bb);
+
+// use of bind method
+
+const person11 ={
+  name : "shivam",
+  age : 20,
+  occupation : "engineering",
+  intro : function(){
+    return this.name + " " + this.occupation ;
+  }
+}
+
+const member = {
+    name : "chitresh",
+    age :25,
+    occupation : "cse"
+}
+
+let introduction = person11.intro.bind(member);
+
+console.log(introduction());
+
+// object destructuring
+
+let remote = ({firstname1, lastname1}) => console.log(`${firstname1} ${lastname1}`);
+
+let person112 = {
+    firstname1 : "Shivam",
+    lastname1 : "Singh"
+}
+
+remote(person112);
+
+const car1 = {
+    version : 2016,
+    model1 : "TATA"
+}
+
+const {version , model1} = car1;
+console.log(version);
+
+let{version1, model11, mileage = 20} = car1;
+console.log(version1); // undefined
+console.log(mileage);  // 20
+
+// Array Destructuring
+
+let number = [1,2,3,4,5];
+let [ONE, TWO, THREE, FOUR, ...REST] = number;
+console.log(REST);
+
+//JS callback
+
+function display(){
+    console.log
+}
