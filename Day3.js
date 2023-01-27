@@ -29,7 +29,7 @@ function display(num) {
 
 function calculate(number1 , number2, myCallback){
   let sum = number1 + number2;
-  display(sum);
+  myCallback(sum);
 } 
 
 calculate(5,5, display); 

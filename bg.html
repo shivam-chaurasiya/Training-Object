@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hiii</h1>
+    
+    <button onClick="displayDate()"> i am </button>
+    <script>
+        function displayDate() {
+          document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+        <p id="demo"></p>
+
+        <button onclick="myname()"> Who i am </button>
+      <script>
+       function myname(){
+        document.getElementById("mine").innerHTML = "My name is Shivam";
+       }
+      </script>    
+      <p id="mine" ></p>
+
+      <input type="text" onchange="my()" id="name"/>
+      <script>
+        function my(){
+            const mm = document.getElementById("name");
+            mm.value = mm.value.toUpperCase();
+        }
+      </script>
+
+      
+    
+</body>
+</html>
