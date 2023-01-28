@@ -181,3 +181,40 @@ const f = name365.entries();
 for(let x of f){
     console.log(x);
 }
+
+//let dd = 0 ;
+//function counter(basenumber){
+//   return dd += basenumber;
+//   function adddanother(){
+//    return "The counter currently at:" + dd ;
+//   }
+//}
+//
+//counter(5);
+//counter(9);
+//const sdf  = adddanother();
+//console.log(sdf);
+
+var string = "welcome to india ";
+var reversebyletter = functionseprator(string, "");
+//console.log(reversebyletter);
+
+
+
+function functionseprator(string, separator){
+    return string.split(separator).reverse().join(separator);
+}
+var reversebyword = functionseprator(reversebyletter," ");
+console.log(reversebyword);
+
+
+const palindrome = (str) => {
+  str.toLowerCase();
+  return str === str.split("").reverse().join("");
+};
+
+console.log(palindrome("racecar"));
+
+
+
+
